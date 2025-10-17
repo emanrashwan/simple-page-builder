@@ -184,6 +184,13 @@ class SPB_Admin_Interface {
      * Render API Keys tab
      */
     private function render_api_keys_tab() {
+        require_once SPB_PLUGIN_DIR . 'admin/views/api-keys.php';
+    }
+    
+    /**
+     * Render Activity Log tab (old version - kept for reference)
+     */
+    private function render_api_keys_tab_old() {
         $api_keys = SPB_API_Keys::get_instance();
         $keys = $api_keys->get_all_keys();
         $new_api_key = get_transient('spb_new_api_key');
@@ -287,7 +294,31 @@ class SPB_Admin_Interface {
      * Render Activity Log tab
      */
     private function render_activity_log_tab() {
-        global $wpdb;
+        require_once SPB_PLUGIN_DIR . 'admin/views/activity-log.php';
+    }
+    
+    /**
+     * Render Created Pages tab
+     */
+    private function render_created_pages_tab() {
+        require_once SPB_PLUGIN_DIR . 'admin/views/created-pages.php';
+    }
+    
+    /**
+     * Render Settings tab
+     */
+    private function render_settings_tab() {
+        require_once SPB_PLUGIN_DIR . 'admin/views/settings.php';
+    }
+    
+    /**
+     * Render Documentation tab
+     */
+    private function render_documentation_tab() {
+        require_once SPB_PLUGIN_DIR . 'admin/views/documentation.php';
+    }
+}
+
         $log_table = $wpdb->prefix . 'spb_activity_log';
         $keys_table = $wpdb->prefix . 'spb_api_keys';
         
