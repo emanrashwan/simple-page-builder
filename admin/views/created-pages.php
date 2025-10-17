@@ -186,4 +186,12 @@ $pages_this_month = $wpdb->get_var("SELECT COUNT(*) FROM {$pages_table} WHERE YE
             </table>
         </div>
         
-        <div style="margin-top: 15px; padding: 12px; background: #f0f6fc; border
+        <div style="margin-top: 15px; padding: 12px; background: #f0f6fc; border-left: 4px solid #0073aa; border-radius: 4px;">
+            <strong>ℹ️ Note:</strong> Showing the most recent 100 pages. 
+            <?php if (!empty($search) || $filter_key > 0): ?>
+                Search/filters are active.
+            <?php endif; ?>
+            Pages marked as "Deleted" were removed from WordPress after being created via API.
+        </div>
+    <?php endif; ?>
+</div>
