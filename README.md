@@ -2,7 +2,7 @@
 
 A secure WordPress plugin for creating bulk pages via REST API with advanced authentication and webhook notifications.
 
-## 🎯 Features
+Features
 
 - **Secure REST API Endpoint** - Create pages from external applications
 - **API Key Authentication** - Production-ready authentication system
@@ -12,13 +12,13 @@ A secure WordPress plugin for creating bulk pages via REST API with advanced aut
 - **Admin Dashboard** - Comprehensive management interface
 - **HMAC Signature Verification** - Secure webhook delivery
 
-## 📋 Requirements
+ Requirements
 
 - WordPress 5.8 or higher
 - PHP 7.4 or higher
 - MySQL 5.6 or higher
 
-## 🚀 Installation
+ Installation
 
 1. **Clone the repository:**
    ```bash
@@ -40,7 +40,7 @@ A secure WordPress plugin for creating bulk pages via REST API with advanced aut
    - Click "Generate New API Key"
    - Copy and save your API key securely
 
-## 📚 API Documentation
+ API Documentation
 
 ### Endpoint
 
@@ -134,7 +134,7 @@ Authorization: Bearer your_api_key_here
 }
 ```
 
-## 🔧 cURL Examples
+cURL Examples
 
 ### Basic Request
 
@@ -187,7 +187,7 @@ curl -X POST https://yoursite.com/wp-json/pagebuilder/v1/create-pages \
 curl https://yoursite.com/wp-json/pagebuilder/v1/status
 ```
 
-## 🔔 Webhook Notifications
+Webhook Notifications
 
 When pages are created successfully, the plugin sends a POST request to your configured webhook URL.
 
@@ -289,7 +289,7 @@ app.post('/webhook', (req, res) => {
 app.listen(3000);
 ```
 
-## 🛡️ Security Features
+Security Features
 
 1. **API Key Hashing** - Keys are hashed (SHA-256) before storage
 2. **Rate Limiting** - Configurable requests per hour per key
@@ -298,7 +298,7 @@ app.listen(3000);
 5. **Signature Verification** - HMAC-SHA256 for webhook security
 6. **Permission Checks** - WordPress capability checks for admin actions
 
-## ⚙️ Configuration
+ Configuration
 
 ### Settings (Tools → Page Builder → Settings)
 
@@ -315,7 +315,7 @@ The plugin enforces rate limits per API key. When a key exceeds the limit:
 - Logs the failed attempt
 - Key remains active but cannot make requests until the hour window resets
 
-## 📊 Admin Interface
+ Admin Interface
 
 ### API Keys Tab
 - Generate new API keys
@@ -340,7 +340,7 @@ The plugin enforces rate limits per API key. When a key exceeds the limit:
 - Webhook integration guide
 - Authentication instructions
 
-## 🔨 Development
+ Development
 
 ### File Structure
 
@@ -392,7 +392,7 @@ add_action('spb_pages_created', function($pages, $api_key_id) {
 }, 10, 2);
 ```
 
-## 🧪 Testing
+ Testing
 
 ### Manual Testing
 
@@ -442,7 +442,7 @@ Import this collection for quick testing:
 }
 ```
 
-## 📝 Changelog
+ Changelog
 
 ### Version 1.0.0 (2025-10-17)
 - Initial release
@@ -453,7 +453,7 @@ Import this collection for quick testing:
 - Activity logging
 - Rate limiting
 
-## 🤝 Contributing
+ Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -463,24 +463,24 @@ Contributions are welcome! Please follow these guidelines:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+ License
 
 This plugin is licensed under the GPL v2 or later.
 
-## 👨‍💻 Author
+ Author
 
 **Eman Rashwan**
 - Website: https://yourwebsite.com
 - GitHub: [@yourusername](https://github.com/emanrashwan)
 - Email: eashedeman54@gmail.com
 
-## 🙏 Acknowledgments
+ Acknowledgments
 
 - Built for WebOps technical assessment
 - WordPress REST API framework
 - Community feedback and testing
 
-## 📞 Support
+ Support
 
 For questions or issues:
 - Create an issue on GitHub
