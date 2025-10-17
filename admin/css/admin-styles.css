@@ -1,0 +1,151 @@
+/* Simple Page Builder Admin Styles */
+
+.spb-admin-wrap {
+    margin-top: 20px;
+}
+
+.spb-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.spb-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.spb-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.spb-badge-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.spb-badge-danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.spb-badge-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.spb-badge-info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.wp-list-table code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.spb-section pre {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.spb-section pre code {
+    background: transparent;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.spb-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.spb-stat-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+}
+
+.spb-stat-card .stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0073aa;
+    margin: 10px 0;
+}
+
+.spb-stat-card .stat-label {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.notice.notice-success,
+.notice.notice-error {
+    margin: 15px 0;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.form-table th {
+    width: 200px;
+}
+
+table.wp-list-table th,
+table.wp-list-table td {
+    vertical-align: middle;
+}
+
+.spb-api-key-display {
+    background: #fffbcc;
+    border: 2px solid #e6db55;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.spb-api-key-display p {
+    margin: 10px 0;
+}
+
+.spb-api-key-value {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    word-break: break-all;
+    margin: 10px 0;
+}
+
+.spb-copy-button {
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .spb-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
